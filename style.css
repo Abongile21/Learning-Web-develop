@@ -1,0 +1,76 @@
+img {
+
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+h1{
+    text-align: center;
+    color: #131212e7;
+}
+
+h2{
+    text-align: center;
+    color: #101010e7;
+}
+.credentials{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    border-radius: 9px;
+    width: 200px;
+    cursor: pointer;
+   }
+.button:hover{
+    background-color: rgb(55, 68, 207);
+
+
+}
+input{
+    margin: auto;
+    height: 28px;
+    font-size: 18px;
+    padding: 3px;
+    border-radius: 9px;
+    border:1px solid black;
+    gap: 15px;
+
+}
+input:hover{
+    border-color: blue;
+
+}
+label{
+    color: #0f0e0ee7;
+}
+.holder{
+    gap: 15px;
+}
+
+.under-button{
+    text-decoration: none;
+    text-align: center;
+}
+.a-tag{
+    text-decoration: none;
+}
+/*The other version::::___
+using the holder class of 
+
+
+
+
+
+*/
