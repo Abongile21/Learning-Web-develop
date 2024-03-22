@@ -8,7 +8,7 @@ function doubleNumber(Arr,n){
    for (index =0 ; index<Arr.length ;index++){
       myArr.push(Arr[index],n)
    }
-   //return myArr
+   return myArr
 }
 console.log(doubleNumber(gArr,2))
 
