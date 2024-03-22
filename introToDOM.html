@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleDOM.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button id="btnView">Add</button>
+    <p>Answer:</p>
+    <p class="the-text" id="pText"></p>
+    
+   
+    <div>
+        <p style="font-size: 4rem;" id="emoticon">😗</p>
+        <button id="toggler">Toggle me!</button>
+    </div>
+
+
+
+    <script>
+        let a = document.getElementById("num1")
+        let b = document.getElementById("num2")
+        let c = document.getElementById("results")
+
+        let btn = document.querySelector("#btnView")
+        let toggler = document.querySelector("#toggler")
+        let output = document.querySelector("#pText")
+        let p = document.getElementById("emoticon")
+        
+
+        btn.addEventListener("click", ()=>{
+            output.style.border ="1px solid"
+            let results= parseInt(a.value) + parseInt(b.value)
+            output.innerHTML= results
+            
+
+        })
+        toggler.addEventListener("click", ()=>{
+
+            if (p.innerHTML=="😗"){
+                p.innerHTML = "😘"
+            }
+            else if (p.innerHTML=="😘"){
+                p.innerHTML = "😗"
+            }
+            
+
+
+        })
+
+    </script>
+</body>
+</html>
